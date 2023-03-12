@@ -1,5 +1,4 @@
 import me from "../assets/me.jpeg"
-import resume from "https://drive.google.com/file/d/1YBHBmM-RgKZPD_cgXmWXCSaqoga25ta2/view?usp=sharing"
 import Typed from "typed.js"
 
 const Home = ({ openBar }) => {
@@ -20,7 +19,7 @@ const Home = ({ openBar }) => {
                         <h3 className="hello">Hello, my name is <span className="name">Hamza Elmansy</span></h3>
                         <h3 className="my-prof">I'm a <span className="typing">web developer</span></h3>
                         <p>{ para }</p>
-                        <a href={resume} download="Hamza_CV" className="btn">Download CV</a>
+                        <a href="resume.pdf" download="Hamza_CV" className="btn">Download CV</a>
                     </div>
                     <div className="home-img pad-15">
                         <img src={me} alt="" />
