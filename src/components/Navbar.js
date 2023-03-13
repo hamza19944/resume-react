@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useLocation, NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = ({ barOpen }) => {
     const [open, setOpen] = useState(false)
@@ -34,11 +34,9 @@ const Navbar = ({ barOpen }) => {
             "url": "/contact"
         }
     ]
-    
     let navList = dataNav.map(dn => {
-        return <li><NavLink className={({isActive}) => isActive ? "active" : ""} to={dn.url}><i className={dn.classi}></i>{dn.name}</NavLink></li>
+        return <li key={dn.name}><NavLink className={({isActive}) => isActive ? "active" : ""} to={dn.url}><i className={dn.classi}></i>{dn.name}</NavLink></li>
     })
-    console.log(useLocation().pathname);
     return (
         <aside className={open ? "open" : ""}>
             <div className="logo">

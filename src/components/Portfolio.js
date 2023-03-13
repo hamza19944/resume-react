@@ -1,20 +1,24 @@
+import { useEffect, useState } from "react"
 import data from "../data"
 
 const Portfolio = ({ openBar }) => {
-    // function openWindow(url){
-    //     window.open(url, "_blank").focus
-    // }
+    const [projInfo, setProjInfo] = useState([])
+
+    
     let projects = data.map(proj => {
         return (
-            <div className="portfolio-item pad-15">
+            <div className="portfolio-item pad-15" key={proj.src}>
                 <div className="portfolio-item-inner shadow-dark">
                     <div className="portfolio-img" >
                         <img src={require("../assets/" + proj.src)} alt=""/>
                     </div>
                 </div>
             </div>
-        ) 
+        )
     })
+
+    useEffect(() => setProjInfo(projects), [])
+
     return (
         <section className={openBar ? "portfolio section active open" : "portfolio section active"} id="portfolio">
             <div className="container">
@@ -29,7 +33,7 @@ const Portfolio = ({ openBar }) => {
                     </div>
                 </div>
                 <div className="row">
-                    {projects}
+                    {projInfo}
                 </div>
             </div>
         </section>
