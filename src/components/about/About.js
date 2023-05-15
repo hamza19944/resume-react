@@ -12,7 +12,7 @@ const About = ({ openBar }) => {
                         <div className="about-content pad-15">
                             <div className="row">
                                 <div className="about-text pad-15">
-                                    <h3>I'm Hamza Elmansy <span>JavaScript Developer</span></h3>
+                                    <h3>I'm Hamza Elmansy <span>Frontend Developer</span></h3>
                                     <p>{ desc }</p>
                                 </div>
                             </div>
@@ -159,6 +159,30 @@ const About = ({ openBar }) => {
                                     <div className="row">
                                         <div className="timeline-box pad-15">
                                             <div className="timeline shadow-dark">
+                                                <div className="timeline-item">
+                                                    <div className="circle-dot"></div>
+                                                    <h3 className="timeline-date">
+                                                        <i className="fa fa-calendar"></i> 2022 - Present
+                                                    </h3>
+                                                    <h4 className="timeline-title">
+                                                        Frontend Developer in FWD-Egypt
+                                                    </h4>
+                                                    <p className="timeline-text">
+                                                    Determining the structure and design of web pages, Ensuring user experience determines design choices, and developing features to enhance the user experience.
+                                                    </p>
+                                                </div>
+                                                <div className="timeline-item">
+                                                    <div className="circle-dot"></div>
+                                                    <h3 className="timeline-date">
+                                                        <i className="fa fa-calendar"></i> 2022 - Present
+                                                    </h3>
+                                                    <h4 className="timeline-title">
+                                                        Freelance Frontend Developer
+                                                    </h4>
+                                                    <p className="timeline-text">
+                                                        Building (E-commerce, Personal blogs, and Business websites), Updating code, sloving code problems, 
+                                                    </p>
+                                                </div>
                                                 <div className="timeline-item">
                                                     <div className="circle-dot"></div>
                                                     <h3 className="timeline-date">

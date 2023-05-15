@@ -267,6 +267,7 @@ aside .nav li a i{
     min-height: 100vh;
     display: flex;
     color: var(--text-black-900);
+    padding-top: 50px;
 }
 .home .home-info{
     flex: 0 0 50%;
